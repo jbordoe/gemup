@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+
+require_relative './../lib/gemup'
+
+if __FILE__ == $0
+  tool = GemUp.new
+  gem_name, version = ARGV
+  tool.update_gem(gem_name, version)
+end
